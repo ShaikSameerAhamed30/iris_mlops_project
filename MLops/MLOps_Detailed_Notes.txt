@@ -1,0 +1,539 @@
+Material Drive Link
+https://drive.google.com/drive/folders/1y3h_ZgBmRfabNNMVZG3L-d5RtMQB3nld?usp=sharing                              
+ Day 1 
+Detailed Notes:
+Introduction to MLOps
+MLops= ML(Mechine Learning) +Devops(operations) +Data Engineers
+1.  Prerequisites
+-   Python Programming
+-   NumPy
+-   Pandas
+-   Matplotlib/Plotly
+-   Data Structures
+Data types
+int 34
+float  12.5
+char  Name
+bool   T F 
+complex x+yj 3+4j
+Data Structure 
+tuple ()
+List []
+Set {}
+Dict {Key :Values}
+Libraries
+pandas 
+Numpy 
+Matplotlib /Seaborn 
+
+-   Machine Learning Basics
+
+
+2.  Machine Learning Workflow
+
+-   Data Collection
+-   EDA(Exploratory Data Analysis)
+    head tail dtypes null value  duplicate desc corr unique nunique
+    visualization -outlaiers line pairplot hist boxplot scatter pie heat       column/bar   
+-   Data Cleaning
+    drop /treat null values ,duplicate ,datatype,drop column 
+-   Feature Engineering
+    Column Selection
+-   Data Transformation
+    standard Scale 
+    numeric 
+    Standard Scalar  mean =0 SD =1
+    Minmax Scalar   Min=0  Max =1
+    text 
+    label Encoder  same column replace with 0 1
+    one hot encoding  float 1.0  0.0
+    dummy      int 1 0 
+    Column Split 
+    x i/p y o/p -supervised machine Learning 
+    Row Split 
+    train test split 70-30 80-20
+-   Model Selection
+    Supervised /unsupervised Model 
+-   Model Training
+    X_Train X_test Y_Train Y_test
+    model(X_Train,Y_Train)
+-   Model Evaluation(Accuracy/Error)
+    model(X_text,Y_text)
+    Y_Actual-Y_predicted =Error
+    Error /Accuracy 
+-   Deployment
+    Backend model -Front End Streamlit jango Flask 
+    ##############################################################
+
+
+3.  What is MLOps? MLOps (Machine Learning Operations) is the practice
+    of automating and managing the complete machine learning lifecycle
+    from data collection to deployment, monitoring, retraining, and
+    maintenance.
+
+4.  Why MLOps?
+
+-   Automation
+-   Version Control
+-   Monitoring
+-   Scalability
+-   Continuous Deployment
+-   Retraining
+
+5.  ML Project Lifecycle Problem Statement Data Collection EDA Data
+    Cleaning Feature Engineering Model Building Evaluation Deployment
+    Monitoring Retraining
+
+6.  Stages of MLOps Data Management Feature Engineering Model Building
+    Evaluation Deployment Monitoring Retraining Continuous Improvement
+
+7.  Real-Time Example Netflix Recommendation System: Collect data →
+    Train model → Deploy → Monitor → Retrain.
+
+     MLOps is a set of practices that combines machine learning, software engineering, and DevOps to manage the entire lifecycle of ML models—from development and training to deployment and monitoring in production.
+
+Integrates machine learning workflows with DevOps and data engineering practices
+Automates model training, deployment, monitoring and version control
+Improves collaboration, reproducibility and long-term model performance
+What-is-MlOps.webpWhat-is-MlOps.webp
+Why is MLOps Important
+Imagine you build a model to predict house prices and it works well on your computer. But when you try to use it on a website problems arise like choosing the right model version, handling updated data, retraining regularly and checking performance. This is where MLOps helps. It ensures:
+
+All your work is well organized and versioned
+You can easily repeat model training and testing
+The model can be updated and used in real-world applications without extra effort
+MLOps brings consistency, reliability and efficiency to machine learning workflows.
+
+How to Implement MLOps
+Implementing MLOps involves creating a structured workflow that ensures reproducible, reliable and scalable machine learning model development and deployment.
+
+
+Life Cycle of ML 
+The following are the broadly divided steps which are usually performed in any Predictive analytics /Machine Learning problem.
+
+1. Frame the Problem
+2. Collecting & Reading Data
+3. Exploratory Data Analysis
+4. Data cleaning/Data Pre-processing
+5. Data transformation
+6. Data partition
+7. Selecting few models
+8. Cross validation for all chosen models
+9. Evaluation of all models and Selecting the best model
+Predictions on unknown or unseen data
+10. Deployment
+
+Job Roles 
+Mlops Engineer 
+Data Engineer 
+Ml Engineer
+Data Science 
+                  Day 2
+Design and Development 
+1 ML Workflow Development Stage 
+2 pipelines and Steps
+3 Artifacts
+4 Materializers
+5 Parameters and Settings
+
+1. Problem Definition
+Understand the business problem or use case.
+Define the goals, success metrics, and constraints.
+Identify whether ML is the right approach for the problem.
+2. Data Collection
+Gather raw data from various sources such as databases, APIs, web scraping, or IoT devices.
+Ensure data volume, variety, and velocity meet the needs of the project.
+3. Data Preprocessing
+Data Cleaning: Handle missing values, outliers, and inconsistent data.
+Feature Engineering:
+Create new features from raw data.
+Encode categorical data and normalize numerical features.
+Data Splitting: Divide the dataset into training, validation, and testing sets.
+4. Model Selection
+Choose the type of model(s) to use (e.g., regression, classification, clustering, neural networks).
+Consider trade-offs between performance, interpretability, and complexity.
+
+5. Model Training
+Train the model using the training dataset.
+Optimize model parameters (e.g., weights in neural networks).
+
+6. Hyperparameter Tuning
+Adjust hyperparameters to improve model performance (e.g., learning rate, number of layers).
+Use techniques such as grid search, random search, or Bayesian optimization.
+7. Model Evaluation
+Evaluate the trained model on the validation or test set.
+Use metrics appropriate for the problem (e.g., accuracy, precision, recall, F1-score, RMSE).
+Perform error analysis to understand areas of model weakness.
+
+8. Model Iteration
+Refine the model based on evaluation feedback.
+Iterate through the above steps (e.g., modify features, try different models) to improve performance.
+
+9. Documentation and Reporting
+Document model architecture, data pipeline, performance metrics, and design choices.
+Communicate findings to stakeholders.
+
+Pipeline In ML 
+
+Data Collection and Ingestion
+Gather raw data from various sources like databases, APIs, or files.
+
+Data Preprocessing
+Handle missing values, outliers, and noise.
+Perform data transformations such as normalization, scaling, encoding, etc.
+
+Feature Engineering
+Extract meaningful features from raw data.
+Select or create features that improve model performance.
+
+Model Training
+Split the data into training, validation, and test sets.
+Train ML algorithms on the training set.
+Optimize hyperparameters using validation data.
+
+Model Evaluation
+Assess model performance using metrics like accuracy, precision, recall, F1 score, etc.
+Compare different models to select the best-performing one.
+
+Model Deployment
+Deploy the model into a production environment for inference.
+Expose the model through APIs or integrate it into applications.
+
+Monitoring and Maintenance
+Track model performance in production.
+Retrain or update models as needed to handle concept drift.
+Tools to Build ML Pipelines
+1. Python Libraries
+- Scikit-learn: Includes a Pipeline class for chaining preprocessing and modeling steps.
+- Kedro: Organizes workflows for reproducibility.
+- TensorFlow Extended (TFX): End-to-end pipelines for deep learning.
+
+2. Cloud Platforms
+- AWS SageMaker Pipelines
+- Google AI Platform Pipelines
+- Azure ML Pipelines
+
+3. Orchestration Tools
+- Airflow, Kubeflow: Manage complex workflows.
+
+Artifacts
+1. Model Artifacts
+Trained Models: Serialized versions of trained models (e.g., .h5, .pth, .joblib).
+Pre-trained Models: Models trained on a different dataset or task, used for transfer learning.
+Model Weights/Parameters: Checkpoints or snapshots of a model's weights during or after training.
+
+2. Data Artifacts
+Raw Data: Original datasets used for training, validation, and testing.
+Processed Data: Data that has undergone cleaning, transformation, or augmentation.
+Feature Stores: Reusable, versioned datasets with engineered features.
+Synthetic Data: Artificially generated data for scenarios where real data is scarce or sensitive.
+
+3. Code Artifacts
+Training Scripts: Code for training the model, including hyperparameter configurations.
+Inference Scripts: Code for deploying and serving the model for predictions.
+Preprocessing Pipelines: Scripts or configurations for data transformation steps.
+4. Configuration Artifacts
+Pipeline Configurations: YAML, JSON, or other files defining the structure of ML pipelines.
+Hyperparameters: Parameter settings used during training (e.g., learning rate, batch size).
+
+5. Evaluation Artifacts
+Metrics: Accuracy, precision, recall, F1-score, loss, etc., used to evaluate models.
+Confusion Matrices: Tables summarizing the performance of classification models.
+Validation Curves: Graphs showing performance trends over training epochs.
+
+6. Versioning and Logging Artifacts
+Experiment Logs: Records of training runs, configurations, and results.
+Model Versions: Multiple iterations of models stored in version control systems.
+Pipeline Logs: Execution logs for tracking and debugging ML workflows.
+7. Deployment Artifacts
+Serialized Models: Packaged models ready for deployment in production.
+Docker Images: Containerized environments for consistent deployment.
+APIs: Endpoints for serving predictions or interacting with models.
+
+8. Visualization Artifacts
+Graphs and Plots: Learning curves, feature importances, or t-SNE plots for insights.
+Dashboards: Interfaces for monitoring model performance and system health.
+
+9. Security Artifacts
+Encryption Keys: Keys for securing data and models.
+Access Logs: Records of access and usage in production systems.
+Materializers
+Materializers in MLOps (Machine Learning Operations) are tools or components responsible for converting data or artifacts into a format suitable for a specific stage in the machine learning pipeline. They enable the seamless transformation, loading, and preparation of inputs and outputs across different steps, ensuring consistency and reproducibility.
+Key Functions of Materializers
+- Data Transformation: Materializers transform raw data or intermediary outputs into the format required for the next stage of processing or consumption.
+- Standardization: They enforce consistent data formats and structures, which is crucial for pipelines that operate on diverse data sources or involve multiple teams.
+- Interoperability: By abstracting underlying formats, materializers allow integration between heterogeneous tools or frameworks within the MLOps ecosystem.
+- Versioning and Reproducibility: Materializers often integrate with data versioning systems to ensure that specific data or artifact versions can be tracked and reproduced for debugging or compliance.
+Popular Frameworks with Materializer Concepts
+Some MLOps frameworks and tools use materializers or similar concepts:
+- ZenML: ZenML materializers handle inputs/outputs of pipeline steps, ensuring that data artifacts are appropriately serialized and deserialized.
+- TFX (TensorFlow Extended): Components like ExampleGen and Transform serve as functional equivalents of materializers by standardizing and transforming input data for pipelines.
+- Kubeflow Pipelines: Artifacts and components in Kubeflow serve similar purposes, managing data exchange and transformations between pipeline steps.
+- MLflow: While MLflow does not explicitly call them materializers, its model registry and artifact tracking can be seen as facilitating materialization of models and data.
+Parameter and Settings 
+1. Model Versioning
+Version Control: Track different versions of models to ensure the latest version is used and older models are preserved for comparison.
+Model Registry: Store and manage different versions of the model, along with associated metadata (e.g., training datasets, performance metrics).
+
+2. Data Management
+Data Versioning: Track changes in the training, validation, and test datasets, ensuring consistency in the model's training environment.
+Data Preprocessing Pipelines: Automate the data cleaning, feature engineering, and transformations applied to the datasets.
+
+3. Model Training Parameters
+Learning Rate: Controls the step size in updating model parameters during training.
+Batch Size: Number of training examples used in one iteration.
+Epochs: Number of times the entire dataset passes through the model during training.
+Loss Function: Defines the error measure used to train the model.
+Optimizer: Algorithm used to minimize the loss function (e.g., SGD, Adam).
+4. Hyperparameter Tuning
+Hyperparameter Search Space: Define the range of hyperparameters (e.g., learning rate, number of layers, etc.) for optimization.
+Search Strategy: Methods like grid search, random search, or Bayesian optimization for finding optimal hyperparameters.
+
+5. Model Monitoring and Evaluation
+Model Performance Metrics: Metrics such as accuracy, precision, recall, F1-score, AUC, etc., to evaluate model performance.
+Drift Detection: Monitor shifts in the input data distribution (data drift) or the model’s predictions (concept drift) over time.
+Error Tracking: Capture and categorize errors to diagnose performance issues in real-time.
+
+6. Deployment Settings
+Deployment Framework: Kubernetes, Docker, or serverless solutions for model deployment.
+Scalability: Parameters for scaling the model serving infrastructure, such as auto-scaling configurations.
+Latency and Throughput: Performance requirements, such as maximum acceptable latency and required throughput.
+API Endpoints: Define the endpoint configurations for model inference services.
+7. Pipeline Automation
+CI/CD for ML: Continuous integration and delivery pipeline for automating the training, testing, and deployment of ML models.
+Model Retraining Triggers: Conditions under which the model should be retrained (e.g., performance degradation or new data).
+Artifact Management: Manage and store model artifacts (e.g., weights, model checkpoints) for reproducibility.
+
+8. Security and Compliance
+Access Control: Define user roles and permissions for access to the model and data.
+Audit Trails: Track and log changes in models, parameters, data, and deployments to maintain compliance.
+Model Interpretability: Ensure that models can be understood and explained, especially for regulatory compliance.
+
+9. Resource Management
+Compute Resources: Specify CPU/GPU configurations, memory limits, and other infrastructure-related parameters for training and inference.
+Cost Management: Track and optimize resource usage to avoid unnecessary costs, especially in cloud environments.
+
+How to build the pipeline1. ML Workflow Development Stage
+This is where we code the pipeline locally before deploying.2. Pipelines and Steps
+A pipeline = DAG of steps. Each step has 1 job.
+Example: load_data → clean_data → train_model → evaluate_model
+Benefit: Reusable, testable, debuggable3. Artifacts
+Any file/object produced by a step.
+Types: Dataset.csv, model.pkl, metrics.json, plots.png
+Rule: Every step should have clear input artifacts and output artifacts.4. Materializers
+Bridge between Python objects and storage. 
+Ex: Pandas DataFrame → saved as Parquet in S3
+ZenML, MLflow use materializers automatically.5. Parameters & Settings
+To make pipeline reusable we don’t hardcode values.
+params.yaml: epochs: 50, lr: 0.001, test_size: 0.2
+We can run same pipeline for different datasets just by changing params.Tools for this stage: ZenML, Kedro, MetaflowKey
+
+Requirement for MLops Project
+
+VS code Download Link 
+https://code.visualstudio.com/download?_exp_download=fb315fc982
+
+Summary Day 2: Design and Development 
+                       Day 3
+Overfit   training Acc >testing Acc
+underfit  training Acc <testing Acc
+bestfit     training Acc =testing Acc
+Regularization is used to make model best fit 
+by selecting important features
+1  Lasso L1
+2  Ridge L2
+3  Elastic net L1 +L2  
+
+DAY 3: EXECUTION
+Theme: How to run the pipeline1. Stacks
+A stack = combination of tools for 1 environment.
+Example Stack: Local Orchestrator + S3 Artifact Store + MLflow Tracker2. Components of a Stack:ComponentRoleExample ToolsOrchestratorRuns and schedules stepsAirflow, Kubeflow, PrefectArtifact StoreSaves data, modelsS3, GCS, Azure Blob, LocalExperiment TrackerLogs params, metricsMLflow, W&B, NeptuneModel RegistryVersion modelsMLflow Model RegistryContainer RegistryStore Docker imagesDockerHub, ECR, GCR3. Flavors
+Different implementations of same component.
+Ex: Orchestrator Flavor: local, airflow, kubeflow
+You can switch from local to airflow without changing pipeline code.Key Takeaway Day 3: Execution = Choosing the right stack + flavor to run at scale.
+
+                              Day 4
+Execution and Connect with Git hub
+refer git file 
+
+ML Server Infrastructure
+
+1. Development Environment
+Compute Resources: A development server or cloud instance for building and training models, often equipped with GPUs or TPUs for deep learning tasks.
+Version Control: Git repositories for code and model versioning.
+Data Storage: Cloud-based storage (e.g., AWS S3, Google Cloud Storage) or local file systems to store training data, datasets, and model artifacts.
+
+2. Model Training Infrastructure
+Distributed Training: Use of multiple servers or cloud instances to speed up model training (e.g., Kubernetes clusters or distributed platforms like TensorFlow, PyTorch, Horovod).
+Resource Scaling: Horizontal or vertical scaling of computing resources to handle large datasets and complex models.
+Job Scheduling: Tools like Apache Airflow, Kubeflow Pipelines, or MLflow to manage and schedule training jobs.
+
+3. Model Deployment Infrastructure
+Containerization: Models are typically packaged in containers (e.g., Docker) to ensure consistent environments from development to production.
+Orchestration: Kubernetes for deploying and managing model containers at scale.
+APIs: Exposing models as REST or gRPC APIs using frameworks like FastAPI or TensorFlow Serving, which allow applications to make predictions using the deployed models.
+Load Balancing: Tools like Nginx or AWS Elastic Load Balancer for distributing prediction requests across multiple instance of model
+4. Model Monitoring and Management
+Logging and Metrics: Use of tools like Prometheus and Grafana to monitor the performance of models in production, including response time, accuracy, and error rates.
+Model Drift Detection: Systems to detect when the model's performance starts to degrade due to data drift or concept drift, often using platforms like Evidently AI.
+Alerting: Integration with tools like Slack, PagerDuty, or Opsgenie to alert teams if a model is underperforming.
+
+5. Continuous Integration/Continuous Deployment (CI/CD) for ML
+CI/CD Pipelines: Platforms like Jenkins, GitLab CI, or CircleCI for automating the process of training, testing, and deploying models. These pipelines can handle code changes, model training, testing, and deployment processes automatically.
+Model Validation: Incorporating model validation stages in the CI/CD pipeline to ensure that models meet performance criteria before being deployed.
+
+6. Cloud Platforms and Services
+Cloud Providers: AWS, Google Cloud, Microsoft Azure, and other cloud services provide a variety of services like managed Kubernetes (EKS, GKE), machine learning platforms (SageMaker, Vertex AI), and data storage solutions that integrate seamlessly into the MLOps pipeline.
+Managed Services: Cloud services such as Amazon SageMaker, Azure ML, or Google Vertex AI help with model training, deployment, and monitoring without the need for complex infrastructure setup.
+
+7. Security and Access Control
+Identity and Access Management: Use of IAM to control who can access the infrastructure and data, and who can deploy models.
+Data Encryption: Encryption of sensitive data during training, in storage, and during transmission to ensure privacy and security.
+
+8. Scaling and Cost Management
+Auto-scaling: Auto-scaling mechanisms that allow the infrastructure to dynamically scale based on demand, reducing operational costs.
+Cost Optimization: Monitoring and optimizing cloud resource usage to manage costs effectively, using tools like AWS Cost Explorer or Google Cloud's Cost Management tools.
+
+Server Deployment
+1. Environment Setup
+Operating System: Linux is commonly preferred for MLOps due to its robustness and compatibility with various tools.
+Server Requirements:
+High CPU/GPU performance (depending on the model's complexity).
+Sufficient memory and storage (especially for large datasets).
+A cloud or on-premise server (AWS, GCP, Azure, or local machines).
+
+2. Version Control & Collaboration
+Git: Store and version control code, models, and datasets.
+GitLab/GitHub/Bitbucket: Use for CI/CD pipelines, versioning, and collaboration.
+
+3. Containerization & Virtualization
+Docker: Package applications and dependencies into containers. Helps ensure that the model runs consistently across different environments.
+Kubernetes: For orchestrating Docker containers, automating deployment, scaling, and managing ML models at scale.
+
+4. Continuous Integration / Continuous Deployment (CI/CD)
+Jenkins / GitLab CI / CircleCI: Set up CI/CD pipelines to automate:
+Code testing (unit tests, integration tests).
+Building model containers.
+Deploying models to staging or production environments.
+Automated retraining on new data.
+
+5. Model Deployment
+Model Serving Frameworks:
+TensorFlow Serving: Deploy and serve TensorFlow models.
+TorchServe: For serving PyTorch models.
+FastAPI / Flask / Django: For deploying models as REST APIs.
+Kubeflow / MLflow / Seldon: These tools can manage deployment at scale, including model registry and versioning.
+
+6. Model Monitoring
+Prometheus / Grafana: For monitoring system health, model performance, and metrics like latency, throughput, and errors.
+MLFlow / Neptune.ai: Track model metrics, hyperparameters, and versions.
+Custom Logging: Track input data, predictions, and model performance for continuous feedback and retraining.
+
+7. Model Retraining & Automation
+Airflow / Kubeflow Pipelines: Automate workflows for data collection, training, validation, and model retraining based on new data.
+Trigger-based Retraining: Retrain models automatically when model performance drops or new data arrives.
+
+8. Security & Compliance
+Model Validation: Ensure that models meet predefined criteria and perform consistently.
+Data Privacy: Secure sensitive data and comply with regulations (e.g., GDPR).
+Access Control: Set up permissions for different roles (data scientists, engineers, etc.) in the deployment process.
+
+9. Scaling & Load Balancing
+Kubernetes Horizontal Pod Autoscaling: Scale model instances based on traffic or demand.
+Nginx/HAProxy: Set up load balancers for routing requests to appropriate model instances.
+
+10. Model Versioning and Rollback
+Ensure you can manage multiple versions of models and roll back to a stable version if necessary.
+MLFlow and Kubeflow can manage and track different versions of your models.
+
+Meta data tracking
+1. Experiment Metadata
+Parameters: Hyperparameters, configuration settings, and choices used during training (e.g., learning rate, batch size, number of layers).
+Metrics: Performance metrics (e.g., accuracy, precision, recall, loss).
+Versioning: Tracking versions of models and datasets.
+Model Artifact: The model weights, architecture, and training script used.
+Training Logs: Logs from the training process, including timestamps, errors, and system performance.
+Environment Info: Python version, libraries, frameworks (TensorFlow, PyTorch), and hardware details (e.g., GPU, CPU).
+
+2. Data Metadata
+Dataset Versions: Metadata related to data used for training (e.g., source, version, and schema).
+Data Provenance: Information about where and how data was collected, processed, and stored.
+Data Transformations: The steps taken to preprocess and transform raw data into a usable format (e.g., scaling, encoding).
+
+3. Model Metadata
+Model Architecture: Details about the structure of the model (e.g., number of layers, activation functions, etc.).
+Training Details: Training duration, hardware used, training steps, and optimization strategies.
+Validation Information: Data used for model validation and test splits.
+
+4. Deployment Metadata
+Deployment Configuration: Information about the model’s deployment environment (e.g., cloud provider, containerization details like Docker).
+API Versioning: If the model is exposed via APIs, metadata about API versions and their updates.
+Monitoring Data: Post-deployment metrics such as response time, latency, and error rates in production.
+
+5. Lifecycle Tracking
+Model Lifecycle Events: Recording lifecycle stages of the model (e.g., training, evaluation, deployment, monitoring, retraining).
+Automated Retraining: Keeping track of when and why a model is retrained or replaced based on performance.
+
+6. Collaboration Metadata
+User Activity: Who performed what actions (e.g., who ran the experiment, who deployed the model).
+Collaboration Notes: Any relevant notes or discussions regarding changes or decisions made during the lifecycle.
+                              Day 5
+Steps
+Login to streamlit/io/cloud
+free Login 
+create account first time /login with google account 
+in vs code 
+pip install black isort flake8 
+create new 
+link with GitHub 
+deploy 
+Collaboration
+Cross-Functional Teams
+Data Scientists & Engineers: Collaboration between data scientists, who develop machine learning models, and engineers, who deploy them, is crucial. The data scientists create models, while engineers ensure scalability, robustness, and deployment pipelines.
+MLOps Engineers & DevOps Engineers: MLOps engineers bridge the gap between development and operations. Collaboration with DevOps engineers ensures that CI/CD pipelines are well integrated for smooth transitions from development to production.
+Business Stakeholders: Collaborating with product managers, business analysts, and decision-makers ensures that the developed models align with business goals and deliver actionable insights.
+
+Data Collaboration
+Data Sharing & Collaboration Platforms: Platforms like Snowflake, Databricks, or Google BigQuery allow teams to collaborate by sharing data securely and integrating data pipelines.
+Data Governance & Compliance: Collaboration with legal and compliance teams ensures that data usage and privacy policies are adhered to during model development and deployment.
+
+Cross-Organizational Collaborations
+External Partnerships: Collaborating with external vendors, consultants, or research institutions can help bring in new methodologies, frameworks, or advanced ML techniques that complement in-house efforts.
+Open Source Contributions: Many MLOps frameworks and tools are open source, which leads to cross-organizational collaborations. For example, TensorFlow, PyTorch, and Kubeflow have thriving communities where multiple organizations contribute and share best practices.
+Dashboard
+1. Model Monitoring Dashboards
+Performance Metrics: Track metrics such as accuracy, precision, recall, F1 score, AUC, etc., in real-time to ensure models are functioning as expected.
+Drift Detection: Display drift in model predictions, such as changes in data distributions (data drift) or shifts in model behavior (concept drift).
+Model Health: Show how models are performing over time, including error rates and anomaly detection.
+
+2. Pipeline Monitoring Dashboards
+Workflow Status: Visualize the status of different stages in the ML pipeline, including data preprocessing, feature engineering, model training, and deployment.
+Success/Failure Logs: View logs and alerts related to pipeline failures, with detailed information on issues like data quality problems, system errors, or model performance degradation.
+Resource Usage: Monitor resource consumption, including CPU, GPU, memory, and storage usage, to ensure efficient resource allocation.
+
+3. Data Versioning Dashboards
+Dataset Tracking: Track and display different versions of datasets used for training models, ensuring that reproducibility and traceability are maintained.
+Data Integrity: Visualize metadata and checks to ensure that the data used in model training is clean and consistent.
+
+4. Model Deployment Dashboards
+Deployment Health: Monitor the health of deployed models in production, including latency, throughput, and request success rates.
+Rollback Capabilities: Track versioned deployments and provide options for rolling back to a previous stable version if needed.
+A/B Testing and Model Comparison: Compare different models or versions based on real-time performance metrics to identify the best-performing model.
+
+5. Collaborative Dashboards
+Team Collaboration: Allow team members to share insights, track project progress, and collaborate on model improvements or issues.
+Model Approval Workflows: Track model approval stages, including testing, validation, and sign-off, ensuring that models meet required standards before deployment.
+
+6. Alerting and Notification Dashboards
+Alerts: Set up alerts for any performance drops, failures, or issues that need immediate attention, ensuring timely responses.
+Thresholds: Define thresholds for model performance metrics and trigger notifications when models fall below or exceed certain criteria.
+                         # All The Best #
+
+
+
+
+
+
+
+
+
